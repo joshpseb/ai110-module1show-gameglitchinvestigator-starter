@@ -40,13 +40,14 @@ The AI helped me think of what to assert. I told it I wanted to test the hint di
 
 ## 4. What did you learn about Streamlit and state?
 
-- How would you explain Streamlit "reruns" and session state to a friend who has never used Streamlit?
+Every time you interact with anything in a Streamlit app the entire script reruns from top to bottom. That means any regular variable you set gets thrown away on the next interaction. Session state is basically a dictionary that continues through those reruns, so if you store the secret number or the attempt count there, it stays instead of resetting every time the user clicks something.
 
 ---
 
 ## 5. Looking ahead: your developer habits
 
-- What is one habit or strategy from this project that you want to reuse in future labs or projects?
-  - This could be a testing habit, a prompting strategy, or a way you used Git.
-- What is one thing you would do differently next time you work with AI on a coding task?
-- In one or two sentences, describe how this project changed the way you think about AI generated code.
+I want to keep up the habit of creating a new chat session for every issue, since it helps the AI focus on a sole task without being distracted by outside elements.
+
+Next time I'd give the AI a more specific prompt upfront instead of describing the bug vaguely and then correcting it in follow-ups. The more context I gave like pasting the exact line and explaining what I expected versus what happened the faster it landed on the right fix.
+
+It's important to not take everything AI gives you as being perfect. Reviewing AI code and implementing it is even more important in order to get a real understanding and to make sure things are being done correctly.
